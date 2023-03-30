@@ -13,11 +13,6 @@ apt -o Acquire::AllowInsecureRepositories=true -o Acquire::AllowDowngradeToInsec
 
 > 仅支援 **Debian/Ubuntu** 系统。
 
-## 流程图
-
-![流程图](https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/images/flow.svg)
-
-
 
 ## 路由测试
 
@@ -68,12 +63,9 @@ route_test
   - [ ] [Nextcloud 高硬盘需求](https://github.com/nextcloud/server)
   - [ ] [Rclone 仅作为API使用 无最低配置要求](https://github.com/rclone/rclone)
   - [ ] [Filebrowser 高硬盘需求](https://github.com/filebrowser/filebrowser)
-  - [ ] [Onedrive 高网络需求](https://johnrosen1.com/2021/02/14/onedrive/)
 - RSS
   - [ ] [RSSHub 无最低配置要求](https://github.com/DIYgod/RSSHub)
-  - [ ] [RSSHUB + Miniflux + Fever API实现多设备同步](https://johnrosen1.com/2022/01/26/rss/)
-- 影音
-  - [ ] [懒人党的福音--顶级全自动化影音系统全方位深入剖析](https://johnrosen1.com/2022/03/18/media/)
+
 - 邮箱
   - [ ] [自建邮件伺服器指南基础篇](https://johnrosen1.com/2020/08/27/mail1/)
 - 通讯
