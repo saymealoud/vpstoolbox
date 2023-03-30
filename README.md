@@ -1,8 +1,3 @@
-# ![VPSToolBox](logo.png)
-
-[Telegram 频道](https://t.me/vpstoolbox) [English version](README_en.md)
-
-厌倦了总是需要手动输入命令安装博客，网盘，RSS，邮箱，影音，代理了吗？VPSToolBox 提供了一整套全自动化的解决方案，解放双手，从今天开始！
 
 > 一分钱一分货，觉得网络有问题的时候首先想想你在网络上投入了多少钱最合适。
 
@@ -142,25 +137,10 @@ cat /root/.trojan/letcron.log
 
 使用`bash shell`实现。
 
-## 贡献 Contritbution
-
-1. **Fork**本项目
-2. **Clone**到你自己的机器
-3. **Commit** 修改
-4. **Push** 到你自己的 Fork
-5. 提交**Pull request**
-6. PR 要求请看[**pr 要求**](https://github.com/johnrosen1/vpstoolbox/tree/dev/install)
-
-
-
 
 ## Code Quality
 
 1. 本项目实现了**模块化**
-
-## Rclone 以及全自动上传脚本使用方法
-
-**[Aria2+Rclone+Onedrive 实现全自动化下载](https://johnrosen1.com/2021/02/14/onedrive/)**
 
 ## Debug 相关
 
