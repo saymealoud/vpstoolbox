@@ -22,11 +22,7 @@ apt -o Acquire::AllowInsecureRepositories=true -o Acquire::AllowDowngradeToInsec
 
 ![流程图](https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/images/flow.svg)
 
-## 如果觉得好用，欢迎打钱帮助开发或者尝试以下服务，😃❤️🤣
 
-[Namesilo](https://www.namesilo.com/?rid=685fb47qi)
-
-[Hostyun](https://my.hostyun.com/page.aspx?c=referral&u=27710)
 
 ## 路由测试
 
@@ -39,21 +35,6 @@ source route.sh
 route_test
 ```
 
-## Demo
-
-![demo](https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/images/demo.png)
-
-## 前提条件及使用要点 Usage instruction
-
-1. 请以 **root(sudo -i)** 运行(**可覆盖安装**)。
-
-![root](images/root.png)
-
-2. 请自行[购买](https://www.namesilo.com/?rid=685fb47qi)/[白嫖](https://www.freenom.com)/使用现有的**域名** 并 **[完成 DNS A 解析](https://dnschecker.org/)**，即将域名指向你的 VPS IP,(Namesilo 最慢需要 15+min 生效)。![dns](images/dns.png)
-3. 请在 服务器/VPS/其他各种 控制面板中 **完全关闭或禁用 VPS 防火墙(即开放所有 TCP + UDP 端口)。![防火墙](images/firewall.png)**
-> _Trojan-gfw 以及 Shadowsocks-rust 皆支援 **Fullcone-nat** 但需服务器开启所有端口才能生效。
-4. [HTTP 申请](https://github.com/acmesh-official/acme.sh/wiki/Blogs-and-tutorials) TLS 证书需 **域名 A 解析生效**，[API 申请](https://github.com/acmesh-official/acme.sh/wiki/dnsapi)则需要输入正确的信息。![issuecert](images/cert.png)
-5. 安装完成后，**BBR 已默认启用**，无需手动配置。
 6. 如果需要通过Cloudflare CDN转发Vless(gRPC)流量,请在Cloudflare控制面板的**网络,SSL/TLS,防火墙**中按照下图进行设置。![grpc](images/grpc.png) ![ssl](images/ssl3.png) ![cf_firewall](images/cf_firewall.png) ![0_rtt](images/rtt.png)
 
 ## 隐私声明
@@ -126,12 +107,6 @@ route_test
 - [ ] Ubuntu 16.xx
 - [ ] Ubuntu 14.xx
 
-## 支援的代理客户端
-
-1. [v2rayNG 安卓](https://github.com/2dust/v2rayNG)
-2. [Shadowrocket ios](https://apps.apple.com/us/app/shadowrocket/id932747118)
-3. [Netch Windows](https://github.com/netchx/Netch)
-4. [Qv2ray Windows/Linux/Macos](https://github.com/Qv2ray/Qv2ray)
 
 ## 可能的错误及原因
 
@@ -176,16 +151,8 @@ cat /root/.trojan/letcron.log
 5. 提交**Pull request**
 6. PR 要求请看[**pr 要求**](https://github.com/johnrosen1/vpstoolbox/tree/dev/install)
 
-## Bug 反馈以及 Feature request
 
-- [x] [Github Issue](https://github.com/johnrosen1/vpstoolbox/issues)
-- [x] [TG 群组](https://t.me/vpstoolbox_chat)
 
-注：
-
-1. 其他的反馈方式我大概率看不见。
-2. 除非你有能说服我的理由或者直接提 pr,否则**不接受代理软件支援请求**(比如 wireguard 之类的)。
-3. 无论发生什么请**务必附上复现错误的步骤，截图，OS 发行版等信息**,否则我不可能能够提供任何帮助。
 
 ## Code Quality
 
@@ -202,30 +169,3 @@ cat /root/.trojan/letcron.log
 
 ## License
 
-```
-MIT License
-
-Copyright (c) 2019-2022 johnrosen1
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/johnrosen1/vpstoolbox.svg)](https://starchart.cc/johnrosen1/vpstoolbox)
