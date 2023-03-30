@@ -185,16 +185,16 @@ readconfig(){
 ## 清理apt以及模块化的.sh文件等
 clean_env(){
 prasejson
-cd /root
-if [[ -n ${uuid_new} ]]; then
-echo "vless://${uuid_new}@${myip}:${trojanport}?mode=gun&security=tls&type=grpc&serviceName=${path_new}&sni=${domain}#Vless(${route_final} ${mycountry} ${myip_org} ${myip} ${myipv6} ${target_speed_up} Mbps)" &> ${myip}.txt
-echo "trojan://${password1}@${myip}:${trojanport}?security=tls&headerType=none&type=tcp&sni=${domain}#Trojan($(nproc --all)C$(grep MemTotal /proc/meminfo | awk '{print $2}' | xargs -I {} echo "scale=1; {}/1024^2" | bc)G ${route_final}${mycountry} ${myip_org} ${myip} ${myipv6} ${target_speed_up} Mbps)" >> ${myip}.txt
+#cd /root
+#if [[ -n ${uuid_new} ]]; then
+#echo "vless://${uuid_new}@${myip}:${trojanport}?mode=gun&security=tls&type=grpc&serviceName=${path_new}&sni=${domain}#Vless(${route_final} ${mycountry} ${myip_org} ${myip} ${myipv6} ${target_speed_up} Mbps)" &> ${myip}.txt
+#echo "trojan://${password1}@${myip}:${trojanport}?security=tls&headerType=none&type=tcp&sni=${domain}#Trojan($(nproc --all)C$(grep MemTotal /proc/meminfo | awk '{print $2}' | xargs -I {} echo "scale=1; {}/1024^2" | bc)G ${route_final}${mycountry} ${myip_org} ${myip} ${myipv6} ${target_speed_up} Mbps)" >> ${myip}.txt
 
-else
-echo "trojan://${password1}@${myip}:${trojanport}?security=tls&headerType=none&type=tcp&sni=${domain}#Trojan($(nproc --all)C$(grep MemTotal /proc/meminfo | awk '{print $2}' | xargs -I {} echo "scale=1; {}/1024^2" | bc)G ${route_final}${mycountry} ${myip_org} ${myip} ${myipv6} ${target_speed_up} Mbps)" &> ${myip}.txt
+#else
+#echo "trojan://${password1}@${myip}:${trojanport}?security=tls&headerType=none&type=tcp&sni=${domain}#Trojan($(nproc --all)C$(grep MemTotal /proc/meminfo | awk '{print $2}' | xargs -I {} echo "scale=1; {}/1024^2" | bc)G ${route_final}${mycountry} ${myip_org} ${myip} ${myipv6} ${target_speed_up} Mbps)" &> ${myip}.txt
 ## curl --retry 5 https://johnrosen1.com/fsahdfksh/ --upload-file ${myip}.txt &> /dev/null
 
-fi
+#fi
 cd
 if [[ ${install_dnscrypt} == 1 ]]; then
   if [[ ${dist} = ubuntu ]]; then
